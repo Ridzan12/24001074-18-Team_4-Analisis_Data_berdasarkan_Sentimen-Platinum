@@ -9,20 +9,25 @@ Cleansing:
 - KamusAlay: To change any informal or typo word in to Formal word
 ##
 Neural Network:
-- Stratify = true
-- Activation = Relu
-- solver = adam
 
-KFold Result:
-- T1: Negative: 0.79, Neutral: 0.79, Positive: 0.89, Accuracy: 0.85
-- T2: Negative: 0.77, Neutral: 0.74, Positive: 0.89, Accuracy: 0.84
-- T3: Negative: 0.79, Neutral: 0.81, Positive: 0.90, Accuracy: 0.85
-- T4: Negative: 0.78, Neutral: 0.74, Positive: 0.89, Accuracy: 0.84
-- T5: Negative: 0.78, Neutral: 0.73, Positive: 0.89, Accuracy: 0.84
-- Average Accuracy: 0.8456363636363637
+- Extraction:
+  - TF-IDF
+
+- Model:
+  - Stratify = true
+  - Activation = Relu
+  - solver = adam
+
+- KFold Result:
+  - T1: Negative: 0.79, Neutral: 0.79, Positive: 0.89, Accuracy: 0.85
+  - T2: Negative: 0.77, Neutral: 0.74, Positive: 0.89, Accuracy: 0.84
+  - T3: Negative: 0.79, Neutral: 0.81, Positive: 0.90, Accuracy: 0.85
+  - T4: Negative: 0.78, Neutral: 0.74, Positive: 0.89, Accuracy: 0.84
+  - T5: Negative: 0.78, Neutral: 0.73, Positive: 0.89, Accuracy: 0.84
+  - Average Accuracy: 0.8456363636363637
 ##
 LSTM:
 
-KFold Result:
+- KFold Result:
 ##
 H4 download file link:
