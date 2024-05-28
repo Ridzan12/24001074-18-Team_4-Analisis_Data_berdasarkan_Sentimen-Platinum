@@ -28,6 +28,20 @@ Neural Network:
 ##
 LSTM:
 
+- Extraction:
+  - Tokenizer
+  - Pad Sequence
+    
+- Model:
+  - model = sequential
+  - Activation = softmax
+  - optimizer = adam
+    
 - KFold Result:
+  - T1: Negative: 0.82, Neutral: 0.74, Positive: 0.91, Accuracy: 0.87
+  - T2: Negative: 0.82, Neutral: 0.71, Positive: 0.91, Accuracy: 0.87
+  - T3: Negative: 0.82, Neutral: 0.76, Positive: 0.91, Accuracy: 0.87
+  - T4: Negative: 0.82, Neutral: 0.75, Positive: 0.91, Accuracy: 0.87
+  - T5: Negative: 0.81, Neutral: 0.74, Positive: 0.91, Accuracy: 0.86
 ##
 H4 download file link:
