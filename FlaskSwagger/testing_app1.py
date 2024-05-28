@@ -49,7 +49,7 @@ def removechars(text):
     text = re.sub('((www\.[^\s]+)|(https?://[^\s]+)|(http?://[^\s]+))','',text)
     text = re.sub('\d', '', text)
     text = re.sub(r'\b\w\b', '', text)
-    stopwords = ['di', 'yang', 'dan', 'nya', 'saya', 'ini', 'itu', 'aku', 'kamu', 'th']
+    stopwords = ['di', 'yang', 'dan', 'nya', 'saya', 'ini', 'itu', 'aku', 'kamu', 'th', 'sekali']
     for stopword in stopwords:
         text = re.sub(r'\b{}\b'.format(stopword), '', text)
     return text
