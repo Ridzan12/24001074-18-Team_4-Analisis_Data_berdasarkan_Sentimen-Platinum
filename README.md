@@ -16,7 +16,7 @@ Neural Network:
 - Model:
   - Stratify = true
   - Activation = Relu
-  - solver = adam
+  - Solver = adam
 
 - KFold Result:
   - T1: Negative: 0.79, Neutral: 0.79, Positive: 0.89, Accuracy: 0.85
@@ -43,5 +43,6 @@ LSTM:
   - T3: Negative: 0.82, Neutral: 0.76, Positive: 0.91, Accuracy: 0.87
   - T4: Negative: 0.82, Neutral: 0.75, Positive: 0.91, Accuracy: 0.87
   - T5: Negative: 0.81, Neutral: 0.74, Positive: 0.91, Accuracy: 0.86
+  - Accuracy:  0.8659350708733425
 ##
 H4 download file link:
