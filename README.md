@@ -33,9 +33,9 @@ LSTM:
   - Pad Sequence
     
 - Model:
-  - model = sequential
+  - Model = sequential
   - Activation = softmax
-  - optimizer = adam
+  - Optimizer = adam
     
 - KFold Result:
   - T1: Negative: 0.82, Neutral: 0.74, Positive: 0.91, Accuracy: 0.87
