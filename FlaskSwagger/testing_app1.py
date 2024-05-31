@@ -101,8 +101,7 @@ def nn():
 @swag_from(r"docs\nn_file.yml", methods=['POST'])
 @app.route('/nn_file', methods=['POST'])
 def text_processing_file():
-
-    # Upladed file
+    # Uploaded file
     file = request.files.getlist('file')[0]
 
     # Import file csv ke Pandas
@@ -115,23 +114,24 @@ def text_processing_file():
     cleaned_text = []
     label = []
     for input_text in texts:
-        cleaned_text.append(input_text)
+        cleaned_text.append(cleansing(input_text))
         text = [cleansing(input_text)]
         feature = feature_file_from_nn.transform(text)
-        prediction = model_file_from_nn.predict(feature)[0]
 
-    
-        #label.append(sentimen[prediction])
+        prediction = model_file_from_nn.predict(feature)[0]
+        polarity = np.argmax(prediction)
+        label.append(sentimen[polarity])
 
     json_response = {
         'status_code': 200,
         'description': "Teks yang sudah diproses",
-        'data_text': cleaned_text,
-        'data_sentiment': prediction.tolist()
+        'data_text': texts,
+        'data_sentiment': label
     }
 
     response_data = jsonify(json_response)
     return response_data
+
 
 # Endpoint for LSTM prediction
 @swag_from("docs/lstm.yml", methods=['POST'])
@@ -186,7 +186,7 @@ def lstm_file():
     json_response = {
         'status_code': 200,
         'description': "Teks yang sudah diproses",
-        'data_text': cleaned_text,
+        'data_text': texts,
         'data_sentiment': label
     }
 
