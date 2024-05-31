@@ -45,5 +45,9 @@ LSTM:
   - T5: Negative: 0.81, Neutral: 0.74, Positive: 0.91, Accuracy: 0.86
   - Accuracy:  0.8659350708733425
 ##
-H5 download file link:
+H5 and Model_of_tfidf download file link:
 https://drive.google.com/file/d/103DIJAy_yjSv1rUhSQ6p9WvubW0mFXkC/view?usp=sharing
+
+note:
+For model H5 put in main folder flaskswagger
+For model of tfidf ekstraktion with the folder model_of_tfidf in the main folder flaskswagger
